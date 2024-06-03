@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminReceipt2.css">
+    <title>Document</title>
+</head>
+<style>
+    .body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 250px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .horizontal-line {
+        height: 10px;
+        margin-bottom: 15px;
+        width: 290px;
+        margin-left: -20px;
+        background: #D9D9D9;
+    }
+
+    .horizontal-line-schwartz {
+        height: 3px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        width: 270px;
+        margin-left: -10px;
+        background: #000000;
+    }
+
+    .logo-container {
+        text-align: right;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .reset-button {
+        font-weight: 900;
+        display: block;
+        width: 145px;
+        height: 19.75px;
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 10.5px;
+    }
+
+    .reset-letter {
+        color: #fff;
+    }
+
+    .reset-letter-1 {
+        color: #0081C8;
+    }
+
+    .reset-letter-2 {
+        color: #00A651;
+    }
+
+    .reset-letter-3 {
+        color: #EE334E;
+    }
+
+    .reset-letter-4 {
+        color: #FCB141;
+    }
+
+    .reset-letter-5 {
+        color: #0081C8;
+    }
+
+    .footer {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .footer-buttons .playbook-button,
+    .footer-buttons .sign-in-button,
+    .footer-buttons .discord-button {
+        margin: 5px;
+        padding: 10px 20px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        flex: 1 1 auto;
+        /* Allow buttons to grow and shrink */
+        max-width: 120px;
+        /* Set a maximum width for the buttons */
+    }
+
+    .footer-buttons .playbook-button {
+        background-color: #000000;
+    }
+
+    .footer-buttons .sign-in-button {
+        background-color: #00A651;
+    }
+
+    .footer-buttons .discord-button {
+        background-color: #7289DA;
+    }
+
+    .footer-buttons .playbook-button:hover,
+    .footer-buttons .sign-in-button:hover,
+    .footer-buttons .discord-button:hover {
+        opacity: 0.8;
+    }
+
+    .footer-socials {
+        margin-bottom: 20px;
+    }
+
+    .footer-socials .social-link {
+        margin: 0 10px;
+    }
+
+    .footer-socials .social-link img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-info {
+        font-size: 14px;
+    }
+
+    .footer-info p {
+        margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+
+        .footer-buttons .playbook-button,
+        .footer-buttons .sign-in-button,
+        .footer-buttons .discord-button {
+            max-width: 100px;
+            /* Reduce maximum width for smaller screens */
+            padding: 8px 16px;
+            /* Adjust padding for smaller screens */
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .reset-button {
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .horizontal-line {
+            width: 640px;
+        }
+
+        .horizontal-line-schwartz {
+            width: 620px;
+            margin-left: -10px;
+        }
+    }
+</style>
+
+<body class="body">
+    <div class="container">
+        <div class="horizontal-line"></div>
+        <div class="logo-container">
+            <img src="./logo.png" alt="Podium Pick'Em Challenge Logo" class="logo">
+        </div>
+        <div class="content">
+            <p><strong>{User first name},</strong></p>
+            <p>
+                Thanks for joining the
+                <a>
+                    <span style='color: #0081C8;'>2</span><span style='color: #00A651'>0</span><span
+                        style='color: #d8d8d8'>2</span><span style='color: #FCB141'>4</span>
+                </a>
+                Podium Pick’em Challenge!
+            </p>
+            <p>
+                Here is a receipt for your records:
+            </p>
+            <p>
+                <b>PPC Account:</b> {username} <br />
+                <b>PPC24 Role:</b> {user role}<br />
+                <b>Transaction ID:</b>{transaction id}<br />
+                <b>Date:</b> {purchase date}<br />
+            </p>
+            <p>
+                <b>PURCHASE SUMMARY</b> <br />
+                {item} - {cost}
+            </p>
+            <p>
+                IF you’re playing as support for another Team sure to let the Team Manager know you have your Season
+                Pass so they can add you to the Team!
+            </p>
+            <p>
+                <b style="color: #EE334E;">IMPORTANT</b>
+                <b> PLEASE ALLOW FOR US TO SEND YOU NOTIFICATIONS </b> - you’ll ONLY receive notifications
+                directly
+                related to PPC gameplay: League & Team updates.
+            </p>
+            <p>Good luck on the road to Podium Glory, Champ</p>
+            <b>
+                <span style='color: #0081C8;'>PODIUM</span> <span style='color: #00A651'>PICK’EM</span>
+                <span style='color: #EE334E'>CHALLENGE</span>
+            </b>
+        </div>
+        <div class="horizontal-line-schwartz"></div>
+        <div class="footer-buttons">
+            <button class="playbook-button">PLAYBOOK</button>
+            <button class="sign-in-button">SIGN IN</button>
+            <button class="discord-button">DISCORD</button>
+        </div>
+        <footer class="footer">
+
+            <div class="footer-socials">
+                <a href="https://instagram.com" class="social-link"><img src="Instagram.png" alt="Instagram"></a>
+                <a href="https://facebook.com" class="social-link"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="https://linkedin.com" class="social-link"><img src="LinedIn.png" alt="LinkedIn"></a>
+                <a href="https://discord.com" class="social-link"><img src="Discord.png" alt="Discord"></a>
+            </div>
+            <div class="footer-info">
+                <p>podiumpickemchallenge2024.com</p>
+                <p>Chicago, IL</p>
+                <p>© 2024 Podium Pick'em Challenge</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
