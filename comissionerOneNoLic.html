@@ -8,8 +8,10 @@
     <title>PPC Account Creation</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
     body {
-        font-family: Arial, sans-serif;
+        font-family: "Noto Sans Mono", "Noto Sans";
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
@@ -23,14 +25,25 @@
     }
 
     .logo-container {
-        text-align: center;
+        text-align: right;
         margin-bottom: 20px;
+    }
+
+    .subtext-container {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .subtext-container p {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 31.33px;
     }
 
     .horizontal-line {
         height: 10px;
         margin-bottom: 15px;
-        width: 800px;
+        width: 310px;
         margin-left: -20px;
         background: #D9D9D9;
     }
@@ -99,34 +112,13 @@
         font-weight: bold;
     }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-
-    .buttons .playbook-button,
-    .buttons .sign-in-button,
-    .buttons .discord-button {
-        margin: 5px;
-        padding: 10px 20px;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        flex: 1 1 auto;
-        /* Allow buttons to grow and shrink */
-        max-width: 120px;
-        /* Set a maximum width for the buttons */
-        text-align: center;
-    }
 
     .playbook-button {
         background-color: #000000;
     }
 
     .sign-in-button {
-        background-color: #00A651;
+        background-color: #EE334E;
     }
 
     .discord-button {
@@ -179,7 +171,7 @@
     }
 
     .footer-buttons .sign-in-button {
-        background-color: #00A651;
+        background-color: #EE334E;
     }
 
     .footer-buttons .discord-button {
@@ -219,29 +211,139 @@
         margin-top: 5px;
     }
 
-    @media (max-width: 600px) {
+    body {
+        font-family: Arial, sans-serif;
+    }
 
-        .buttons .playbook-button,
-        .buttons .sign-in-button,
-        .buttons .discord-button,
-        .footer-buttons .playbook-button,
-        .footer-buttons .sign-in-button,
-        .footer-buttons .discord-button {
-            max-width: 100px;
-            /* Reduce maximum width for smaller screens */
-            padding: 8px 16px;
-            /* Adjust padding for smaller screens */
-        }
+    .container {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .banner {
+        margin: 10px 0;
+        margin-left: -10px;
+        padding: 10px;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        width: 290px;
+    }
+
+    .banner div {
+        font-size: 27px;
+        font-weight: 800;
+        line-height: 36.77px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .banner.principal {
+        background-color: #000;
+        width: 290px;
+        margin-left: -60px;
+    }
+
+    .banner.blue {
+        background-color: #0081C8;
+    }
+
+    .banner.green {
+        background-color: #00A651;
+    }
+
+    .banner.red {
+        background-color: #EE334E;
+    }
 
 
+    .banner.yellow {
+        background-color: #FCB141;
+    }
+
+    .section-title {
+        font-size: 27px;
+        font-weight: 800;
+        line-height: 30px;
+
+    }
+
+    .section-title span {
+        font-size: 23px;
+        font-weight: 800;
+        line-height: 20px;
+        color: #0081C8;
+    }
+
+    .buttons {
+        margin: 20px 0;
+    }
+
+    .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 25px;
+        font-size: 1.2em;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button.blue {
+        background-color: #0081C8;
+    }
+
+    .button.green {
+        background-color: #00A651;
+    }
+
+    .button.yellow {
+        background-color: #FCB141;
+    }
+
+    .info {
+        margin: 20px 0;
+        font-size: 1em;
+        text-align: left;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .buttons .playbook-button,
+    .buttons .sign-in-button,
+    .buttons .discord-button,
+    .footer-buttons .playbook-button,
+    .footer-buttons .sign-in-button,
+    .footer-buttons .discord-button {
+        max-width: 100px;
+        padding: 8px 16px;
     }
 
     @media screen and (min-width: 767px) {
         .horizontal-line {
-            width: 800px;
+            width: 690px;
             margin-left: -20px;
         }
 
+        .banner {
+            margin-left: -10px;
+            width: 670px;
+        }
+
+        .banner div {
+            font-size: 27px;
+            font-weight: 800;
+            line-height: 36.77px;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        .banner.principal {
+            background-color: #000;
+            width: 670px;
+            margin-left: -60px;
+        }
         .theOneuwa89h32qhidfasjioc {
             margin-left: auto;
             margin-right: auto;
@@ -263,6 +365,37 @@
             width: 100%;
             margin-left: 0px;
         }
+
+        .banner div {
+            font-size: 27px;
+            font-weight: 800;
+            line-height: 36.77px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (min-width: 1268px) {
+        .horizontal-line {
+            width: 800px;
+        }
+        .banner {
+            margin-left: -10px;
+            width: 780px;
+        }
+
+        .banner div {
+            font-size: 27px;
+            font-weight: 800;
+            line-height: 36.77px;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        .banner.principal {
+            background-color: #000;
+            width: 780px;
+            margin-left: -60px;
+        }
     }
 </style>
 
@@ -273,88 +406,33 @@
             <div class="logo-container">
                 <img src="./logo.png" alt="Podium Pick'Em Challenge Logo" class="logo">
             </div>
-            <div class="wilkommenSache">
-                <p>
-                    WELCOME TO THE <br />
-                    <span class="dsadsa">
-                        <a>
-                            <span style='color: #0081C8;'>2</span><span style='color: #00A651'>0</span><span
-                                style='color: #EE334E'>2</span><span style='color: #FCB141'>4</span>
-                        </a>
-                        CHALLENGE</span>
-
-                </p>
-            </div>
-            <div class="buttons">
-                <button class="playbook-button">PLAYBOOK</button>
-                <button class="sign-in-button">SIGN IN</button>
-                <button class="discord-button">DISCORD</button>
-            </div>
-            <div class="horizontal-line-schwartz"></div>
-            <p><b>{USER FIRST NAME},</b></p>
-            <p>Welcome to the FIRST Podium Pick’em Challenge!</p>
-            <p>You said yes to a CHALLENGE and we like that about you!</p>
-            <p><strong><span class="important">IMPORTANT</span> PLEASE ALLOW FOR US TO SEND YOU NOTIFICATIONS</strong>
-            </p>
-            <p>You’ll ONLY receive notifications directly related to PPC gameplay: League management & Team updates
-                during the Season.</p>
-            <p>Below are some resources to help support your Challenge experience:</p>
-            <div class="idasm0ih3289njjkvfskd">
-                <p>
-                    <img src="./Ref.png" /> <strong>PPC Coach</strong> -
-                    You’ll see our chat bot, known as the ‘Coach’ in the bottom right of
-                    the site: Search our full FAQ or send a message to a (real) Coach for help with something specific.
-                    You’ll also be able to get in touch with the Tech Team here.
-                </p>
-                <p>
-                    <img src="./Playbook black.png" /> <a href="">PPC Playbook</a> - you’re one stop shop to full <span
-                        class="highlight-2024">2024</span>
-                    Challenge experience.
-                </p>
-                <p>
-                    <img src="./Discord_purple.png" /> <strong>Join the <a href="">Podium Pick’em Challenge Discord
-                            Community</a></strong>. Discuss Podium Picks and
-                    engage with other Players throughout the Season! Find specific channels for:
-                <ul>
-                    <li>Commissioners</li>
-                    <li>Players</li>
-                    <li>Sports</li>
-                    <li>Divisions</li>
-                </ul>
-                </p>
+            <div class="subtext-container">
+                <p> { USER FIRST NAME } - </p>
             </div>
 
-            <p>If you haven’t already, <a href="">SIGN IN</a> to create or join your League!</p>
-            <ol type="a">
-                <li>
-                    To join a Division and create your League Commissioner’s will purchase a Conference License which
-                    also includes a <a>
-                        <span style='color: #0081C8;'>2</span><span style='color: #00A651'>0</span><span
-                            style='color: #EE334E'>2</span><span style='color: #FCB141'>4</span>
-                    </a> Season Pass. Commissioner’s do not have to
-                    add a team.
-                </li>
-                <li>
-                    To join a League or a Team Players will need a <a>
-                        <span style='color: #0081C8;'>2</span><span style='color: #00A651'>0</span><span
-                            style='color: #EE334E'>2</span><span style='color: #FCB141'>4</span>
-                    </a> Season Pass.
-                    Season Passes are $5.50 - they include tax and we could easily argue it’s a better bang for your
-                    buck than your morning coffee, but we’ll let you be the judge 😎
-                </li>
-            </ol>
-            <p>Good luck on the road to Podium Glory, Champ!</p>
-            <div class="theOneuwa89h32qhidfasjioc">
-                <img src="goldOneMedal.png" alt="">
-                <img src="goldTwo.png" alt="">
-                <img src="goldthree.png" alt="">
-                <img src="man.png" alt="">
-                <img src="most.png" alt="">
-                <img src="goldMedal.png" alt="">
-                <img src="clickMan.png" alt="">
-                <img src="hotspot.png" alt="">
-                <img src="move.png" alt="">
-                <img src="penna.png" alt="">
+            <div class="container">
+                <div class="banner principal">
+                    <div class="banner blue">YOU CAME</div>
+                    <div class="banner green">YOU SAW</div>
+                    <div class="banner red">BUT YOU SAID NO TO CREATING A LEAGUE</div>
+                    <div class="banner yellow">UNGLORIOUS</div>
+                </div>
+
+                <div class="section-title">
+                    <span>GAME TIME</span> <br /> COMMISSIONER!
+                </div>
+                <div class="buttons">
+                    <a href="#" class="button blue">CREATE YOUR LEAGUE</a>
+                    <a href="#" class="button green">JOIN A LEAGUE</a>
+                    <a href="#" class="button yellow">JOIN A TEAM</a>
+                </div>
+                <div class="info">
+                    <p>Podium Picks Open: Wed, July 10</p>
+                    <p>Deadline to join a league or a team is Thurs, July 25 @ 6PM EST</p>
+                    <p>Podium Picks Lock: Fri, July 26 @ 8PM EST</p>
+                    <p>The 2024 season officially starts with the Opening Ceremonies on Fri, July 26 @ 8-24 PM EST (5-21
+                        PM PST)</p>
+                </div>
             </div>
             <div class="horizontal-line-schwartz"></div>
             <div class="footer-buttons">
